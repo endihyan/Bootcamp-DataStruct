@@ -65,14 +65,14 @@ int main()
     struct Node* a = NULL; 
     struct Node* b = NULL; 
     
-	for(int i = 0; i < n; i++){
-		push(&a, i);
-	}
+    push(&a, 10); 
+    push(&a, 15); 
+    push(&a, 5); 
   
-  	for(int i = 20; i < x; i++){
-  	push(&b, i);	
-	}
-	 
+    push(&b, 30); 
+    push(&b, 3); 
+    push(&b, 2); 
+	
     res = SortedMerge(a, b); 
     printf("Merged Linked List is: \n"); 
     printList(res); 
